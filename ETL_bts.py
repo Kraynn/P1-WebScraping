@@ -30,7 +30,6 @@ def parse(url):
     rating = soup.find(class_=re.compile("star-rating.*"))                  
     rating = rating.get_attribute_list("class")[1]
     
-
     price = soup.find('p', class_="price_color").text
     price_tax = price                                                        
 
@@ -41,7 +40,6 @@ def parse(url):
     cat = cat.find_next("a")
     category = cat.find_next("a").text
     
-
     stock = soup.find("p", class_="instock availability").get_text()        
 
     return (title, category, url, upc, price, price_tax, summary, stock, rating, img)
