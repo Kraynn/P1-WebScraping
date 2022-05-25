@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 import re
-import csv
 
 with open("Travel.csv", "w", newline="") as f:
         header = ['title', 'category', 'product_page_url', 'upc','price_including_tax', 'price_excluding_tax','product_description', 'number_available', 'review_rating', 'image_url']
