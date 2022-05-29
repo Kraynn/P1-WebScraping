@@ -18,7 +18,8 @@ def parse_product(url):
     title = soup.find('h1').text                                            
     img = soup.find("img").get("src")
     img = "https://books.toscrape.com" + img[5:]                                                            
-    summary = soup.select("article[class=product_page]>p")                 
+    for summary in soup.select("article[class=product_page]>p"):
+        summary = summary.text                 
     rating = soup.find(class_=re.compile("star-rating.*"))                  
     rating = rating.get_attribute_list("class")[1]
     price = soup.find('p', class_="price_color").text
