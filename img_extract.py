@@ -38,7 +38,7 @@ for cat_url in soup.select("li a[href*=category]"):
     categories.append(base_index+cat_url.get("href"))                                         
 categories.pop(0)
 
-for url in categories[:2]:
+for url in categories:
     browse_category(url)
     npages = []
     page = requests.get(url)
