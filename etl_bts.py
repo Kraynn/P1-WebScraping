@@ -14,14 +14,12 @@ def load_data(data,filename):
 def parse_product(url):
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser') 
-
-    print(url)                                                          
-                                                    
-    title = soup.find('h1').text                                            #Title  
+                                  
+    title = soup.find('h1').text                                            
     img = soup.find("img").get("src")
-    img = "https://books.toscrape.com" + img[5:]                            #Image Source (lien à modifier)                                 
-    summary = soup.select("article[class=product_page]>p")                  #Description Product
-    rating = soup.find(class_=re.compile("star-rating.*"))                  #Review rating
+    img = "https://books.toscrape.com" + img[5:]                                                            
+    summary = soup.select("article[class=product_page]>p")                 
+    rating = soup.find(class_=re.compile("star-rating.*"))                  
     rating = rating.get_attribute_list("class")[1]
     price = soup.find('p', class_="price_color").text
     price_tax = price                                                        
