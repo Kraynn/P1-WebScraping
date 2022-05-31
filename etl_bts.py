@@ -4,7 +4,7 @@ import csv
 import re
 
 def load_data(data,filename):
-    with open(f"{filename}.csv", "a", newline="") as f:
+    with open(f"{filename}.csv", "a", newline="", encoding='utf-8') as f:
         write = csv.writer(f)
         header = ['title', 'category', 'product_page_url', 'upc','price_including_tax',
         'price_excluding_tax','product_description', 'number_available', 'review_rating', 'image_url']
