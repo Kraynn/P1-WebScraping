@@ -22,9 +22,14 @@ A partir du répertoire local voulu, exectuer les commandes suivantes dans l'inv
 
 >mkdir Img_Extract
 
-------------------------------------
+___________________________________________________
 
-Importer le contenu du repertoire github https://github.com/Kraynn/P1-WebScraping dans le répertoire local. 
+Importation des scripts::
+---------------------------
+
+Téléchargez et extaire le contenu du repertoire github https://github.com/Kraynn/P1-WebScraping dans le répertoire local. 
+Ou cloner le le répertoire via github en utilisant la commande:
+> gitclone https://github.com/Kraynn/P1-WebScraping
 
 __________________________________________________________
 
