@@ -14,7 +14,7 @@ HOW TO INSTALL
 
 Création de l'environnement virtuel:
 ------------------------------------
-A partir du répertoire local voulu, exectuez les commandes suivantes dans l'invité de commande:
+A partir du répertoire local voulu, exectuer les commandes suivantes dans l'invité de commande:
 >
 >python -m venv etl_env
 
@@ -24,9 +24,13 @@ A partir du répertoire local voulu, exectuez les commandes suivantes dans l'inv
 
 ------------------------------------
 
+Importer le contenu du repertoire github https://github.com/Kraynn/P1-WebScraping dans le répertoire local. 
+
+__________________________________________________________
+
 Execution des scripts:
 ----------------------
-Excutez les commandes suivantes pour lancer chacun des scripts:
+Excuter les commandes suivantes pour lancer chacun des scripts:
 >
 >python etl_bts.py
 
