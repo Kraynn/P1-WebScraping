@@ -1,4 +1,4 @@
-requests==2.27.1
-bs4==4.11.1 
+requests==2.26.0
+beautifulsoup4==4.10.0 
 regex==2021.8.3
 urllib3==1.26.7
