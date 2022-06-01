@@ -30,7 +30,7 @@ def browse_category(category):
         pictures.append(img_data)
 
     for data in pictures:
-        urllib.request.urlretrieve(data, f"{data[45:]}")
+        urllib.request.urlretrieve(data, f"Img_extract\{data[45:]}")
         
 categories = []
 for cat_url in soup.select("li a[href*=category]"):
