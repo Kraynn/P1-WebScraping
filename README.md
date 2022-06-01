@@ -8,7 +8,7 @@ pour chacune des catégories de livres disponibles comportant les données de la
 Le script img_extract.py a pour fonction d'extraire les images de chacuns des livres du site books.toscrape.com dans un dossier intitulé "Img_extract".
 **************************
 
-
+______________
 HOW TO INSTALL
 --------------
 
@@ -17,8 +17,11 @@ Création de l'environnement virtuel:
 A partir du répertoire local voulu, exectuez les commandes suivantes dans l'invité de commande:
 >
 python -m venv etl_env
+
 etl_env\Scripts\activate.bat
+
 mkdir Img_Extract
+
 ------------------------------------
 
 Execution des scripts:
@@ -26,6 +29,7 @@ Execution des scripts:
 Excutez les commandes suivantes pour lancer chacun des scripts:
 >
 python etl_bts.py
+
 python img_extract.py
 ***************************
 
