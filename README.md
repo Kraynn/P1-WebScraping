@@ -14,7 +14,7 @@ HOW TO INSTALL
 
 Création de l'environnement virtuel:
 ------------------------------------
-A partir du répertoire local voulu, exectuer les commandes suivantes dans l'invité de commande:
+Exectuer les commandes suivantes dans l'invité de commande au sein du répertoire local voulu:
 >
 >python -m venv etl_env
 
