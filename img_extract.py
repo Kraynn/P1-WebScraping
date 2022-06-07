@@ -17,9 +17,9 @@ def extract_img(url):
     return(img)
 
 def browse_category(category):
-
     page = requests.get(category)
     soup = BeautifulSoup(page.content, 'html.parser')
+    print(category)
 
     pictures = []
     for url in soup.select("div[class=image_container]>a"):
@@ -31,6 +31,11 @@ def browse_category(category):
 
     for data in pictures:
         urllib.request.urlretrieve(data, f"Img_extract\{data[45:]}")
+
+    if soup.find(class_=re.compile("next.*")):
+        page_url = soup.select("li[class=next] > a")[0]
+        newpage = re.sub("index.html|page-([1-9]).html", page_url.get("href"), category)
+        browse_category(newpage)
         
 categories = []
 for cat_url in soup.select("li a[href*=category]"):
@@ -40,14 +45,4 @@ categories.pop(0)
 
 for url in categories:
     browse_category(url)
-    npages = []
-    page = requests.get(url)
-    soup = BeautifulSoup(page.content, 'html.parser')
-    if soup.find(class_=re.compile("next.*")):
-        pass
-    for page_url in soup.select("li[class=next] a"):
-        npage = re.sub("index.html", page_url.get("href"), url)
-        npages.append(npage)
-        for npage in npages:
-            browse_category(npage)
 
