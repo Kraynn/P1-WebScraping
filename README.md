@@ -22,6 +22,8 @@ Exectuer les commandes suivantes dans l'invité de commande au sein du répertoi
 
 >mkdir Img_Extract
 
+>pip install -r requirements.txt
+
 ___________________________________________________
 
 Importation des scripts:
