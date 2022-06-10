@@ -69,6 +69,6 @@ for cat_url in soup.select("li a[href*=category]"):
     categories.append(category)                                          
 categories.pop(0)
 
-for category in categories[2:]
+for category in categories[2:]:
     browse_category(category, writeheader = True)
     
