@@ -12,6 +12,19 @@ ______________
 HOW TO INSTALL
 --------------
 
+Importation des scripts:
+---------------------------
+
+Téléchargez et extaire le contenu du repertoire github.com/Kraynn/P1-WebScraping dans le répertoire local. 
+
+
+
+Ou cloner le répertoire via github en utilisant la commande:
+> git clone https://github.com/Kraynn/P1-WebScraping
+> 
+Puis déplacer le contenu dans le repertoire local voulu.
+
+__________________________________________________________
 Création de l'environnement virtuel:
 ------------------------------------
 Exectuer les commandes suivantes dans l'invité de commande au sein du répertoire local voulu:
@@ -26,18 +39,7 @@ Exectuer les commandes suivantes dans l'invité de commande au sein du répertoi
 
 ___________________________________________________
 
-Importation des scripts:
----------------------------
 
-Téléchargez et extaire le contenu du repertoire github.com/Kraynn/P1-WebScraping dans le répertoire local. 
-
-
-
-Ou cloner le répertoire via github en utilisant la commande:
-> git clone https://github.com/Kraynn/P1-WebScraping
-> 
-Puis déplacer le contenu dans le repertoire local voulu.
-__________________________________________________________
 
 Execution des scripts:
 ----------------------
